@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>TAMM — إحصاءات الزيارات</title>
+  </head>
+  <body>
+    <main class="insights-page">
+      <div class="insights-shell">
+        <header><a href="/">TAMM <small>تمّ</small></a><span>إحصاءات الزيارات</span></header>
+        <section><p class="insights-kicker">لوحة مستقلة</p><h1>نظرة سريعة على الزوار.</h1><p>لا أسماء، لا عناوين IP، ولا بيانات شخصية. كل رقم يمثل جلسة زيارة عشوائية واحدة.</p></section>
+        <div class="stats-grid">
+          <article><span>اليوم</span><b id="today">—</b></article>
+          <article><span>هذا الشهر</span><b id="month">—</b></article>
+          <article><span>هذه السنة</span><b id="year">—</b></article>
+          <article><span>كل الوقت</span><b id="total">—</b></article>
+        </div>
+        <p class="stats-error" id="status" hidden></p>
+        <footer><small id="updated">جارٍ التحميل…</small><button id="refresh">تحديث الأرقام</button></footer>
+      </div>
+    </main>
+    <script type="module" src="/src/insights.ts"></script>
+  </body>
+</html>
